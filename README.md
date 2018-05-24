@@ -12,7 +12,7 @@ The arm cannot move ahead of the last column and will stay there if it receives 
 
 Any other command is ignored and the robot stays in its current position. The commands are case sensitive.
 
-Using the package structure provided, implement the ```public Map<String, List<String>> simulateArm(final String input)``` method in the Robot class.
+Implement the ```public Map<String, List<String>> simulateArm(final String input)``` method in the Robot class found at ```coding-challenge/src/main/java/au/com/parcelpoint/coding_challenge/Robot.java``` . 
 
 The ```simulateArm``` method should accept the commands as a string and returns the state of the columns as a ```Map<String, List<String>>```.
 
@@ -23,11 +23,12 @@ Robot robot = new Robot();
 Map<String, List<String>> output = robot.simulateArm("FD{foo}FFD{bar}RFFD{Foo}RFFD{World}D{}DA{hello}”);
 System.out.println(output.toString()) // prints {A=[foo], B=[Foo, World], C=[], D=[bar, hello], E=[]} to the console
 ```
-Your free to add to the files, classes, pom, dependencies, etc, as you require. Please don't change the existing project structure or the skeleton classes provided.
 
-Implement your test cases in the ```RobotTest``` class. Your free to use any testing framework(s) of your choice.
-
-Please include instructions on how to run your unit tests.
+Implement your test cases in the ```coding-challenge/src/test/java/au/com/parcelpoint/coding_challenge/RobotTest.java``` class. Your free to use any testing framework(s) of your choice. You should be able to run your test cases using Apache Maven. E.g.
+```
+cd coding-challenge
+mvn test
+```
 
 
 
@@ -47,4 +48,4 @@ Use JavaScript/jQuery/Angular/React or any other framework of your choice to bui
 
 ## Submission Instructions
 
-Please upload your solution to both questions to git repos and notify us. Include any instructions in a README.md file.
+Please upload your solution to both questions to a git repo and notify us. If instructions are needed, please include them in a README.md file.
